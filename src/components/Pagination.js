@@ -12,7 +12,7 @@ const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
       <p
         className='arrow'
         style={{ cursor: currentPage === 1 ? 'not-allowed' : 'pointer' }}
-        onClick={() => paginate(currentPage == 1 ? currentPage : currentPage - 1)}
+        onClick={() => paginate(currentPage === 1 || currentPage === '1' ? currentPage : currentPage - 1)}
       >
         &lt;
       </p>
@@ -30,8 +30,8 @@ const Pagination = ({ itemsPerPage, totalItems, paginate, currentPage }) => {
       <p
         className='arrow'
         style={{ cursor: pageNumbers.length == currentPage ? 'not-allowed' : 'pointer' }}
-        aria-disabled={pageNumbers.length == currentPage ? true : false}
-        onClick={() => paginate(pageNumbers.length == currentPage ? currentPage : currentPage + 1)}
+        aria-disabled={pageNumbers.length === currentPage ? true : false}
+        onClick={() => paginate(pageNumbers.length === currentPage ? currentPage : currentPage + 1)}
       >
         &gt;
       </p>
