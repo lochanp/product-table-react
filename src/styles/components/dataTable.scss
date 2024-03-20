@@ -1,0 +1,52 @@
+.main-table-container {
+  margin-top: 40px;
+  background-color: #fff;
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    .table-head {
+      background-color: #F6F3EF;
+      height: 48px;
+    }
+
+    tbody {
+
+      tr {
+        height: 44px;
+        border-bottom: 1px solid #F6F3EF;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    .arrow {
+      color: #6B7280;
+      cursor: pointer;
+    }
+
+    .page-item {
+      // background-color: #6B7280;
+
+
+      .page-link-active {
+        color: #fff;
+        background-color: #6B7280;
+        padding: 8px 12px;
+        border-radius: 8px;
+      }
+
+      .page-link {
+        color: #000;
+      }
+    }
+  }
+}

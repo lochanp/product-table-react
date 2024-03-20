@@ -1,0 +1,40 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+
+  .title {
+    color: #A88650;
+    font-size: 30px;
+  }
+
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .profile-icon {
+    background-color: #f3f4f6;
+    padding: 8px 15px;
+    border-radius: 5px;
+
+    .profile {
+      .img {
+        background-color: #ccc;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+      }
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
